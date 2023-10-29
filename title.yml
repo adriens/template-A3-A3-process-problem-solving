@@ -1,0 +1,19 @@
+---
+title:
+- type: main
+  text: A3 problem solving tool
+- type: subtitle
+  text: A3 problem solving tool
+creator:
+- role: Adrien
+  text: SALES
+- role: editor
+  text: Adrien
+identifier:
+- scheme: 
+  text: 
+publisher:  https://github.com/adriens/
+rights: © 2022 opt-nc/template-eae, CC BY-NC
+stylesheet: epub.css
+cover-image: cover.jpg
+...
