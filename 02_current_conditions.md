@@ -1,4 +1,4 @@
-## Current Conditions
+## 🕵️, Current Conditions analysis
 
 ### ℹ️ About
 
