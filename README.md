@@ -18,5 +18,7 @@ pandoc --metadata title="A3 LEAN Tool"\
     04_analysis.md\
     05_proposed_countermeasures_implementation_verification_plan.md\
     06_follow_up_plan.md\
+    07_result_checks.md\
+    08_standardization_and_next_steps.md\
     -o A3_Lean_Tool.epub
 ```
