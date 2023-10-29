@@ -11,6 +11,7 @@ Build the epub version of the A3.
 
 ```shell
 pandoc --metadata title="A3 LEAN Tool"\
+    title.yml\
     01_background.md\
     02_current_conditions.md\
     03_target_conditions.md\
