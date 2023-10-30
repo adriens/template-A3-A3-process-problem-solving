@@ -45,7 +45,7 @@ pandoc --toc\
 ```
 
 ### docx
-Build the epub version of the A3.
+Build the docx version of the A3.
 
 ```shell
 pandoc --toc\
