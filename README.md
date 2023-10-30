@@ -1,8 +1,9 @@
 [![xc compatible](https://xcfile.dev/badge.svg)](https://xcfile.dev)
 
-# template-A3-process-problem-solving
+# ❔ About
 
-A markdown ePub template to help around "A3 Process and Problem Solving"
+The aim of this repo is to provide a set of ready-to-use markdown files, packaged in a way
+anyone can build and share an ePub version with no or no effort.
 
 ## Tasks
 
