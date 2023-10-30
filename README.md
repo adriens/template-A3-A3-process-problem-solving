@@ -16,13 +16,14 @@ and highly integrable platform.
 
 # 🚀 Getting started
 
-1. Install [`xc`](https://xcfile.dev/getting-started/#installation)
-2. [Create a repo from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
-3. Go the directory of the repo
-4. Modify some `markdowns` with your team
-5. Run `xc` to enjoy ready to use tasks
-6. Build the `ePub`
-7. Enjoy Team work
+1. Install [`pandoc`](https://pandoc.org/installing.html)
+2. Install [`xc`](https://xcfile.dev/getting-started/#installation)
+3. [Create a repo from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+4. Go the directory of the repo
+5. Modify some `markdowns` with your team
+6. Run `xc` to enjoy ready to use tasks
+7. Build the `ePub`
+8. Enjoy Team work
 
 ## Tasks
 
