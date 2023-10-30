@@ -41,15 +41,14 @@ gh extension install valeriobelli/gh-milestone
 ... then customize your env:
 
 ```sh
+echo Please enter your TARGET_OWNER:
 read TARGET_OWNER
-```
-
-```sh
-read TARGET_REPO
-```
-
-```sh
 echo $TARGET_OWNER
+```
+
+```sh
+echo Please enter your TARGET_REPO:
+read TARGET_REPO
 echo $TARGET_REPO
 ```
 
