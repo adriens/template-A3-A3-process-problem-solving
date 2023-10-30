@@ -63,6 +63,16 @@ Just run the following script as is:
 # Create repo
 gh repo create ${TARGET_OWNER}/${TARGET_REPO} --template adriens/template-a3-process-problem-solving --private --clone
 cd ${TARGET_REPO}
+
+# Setup a but more the repo
+# Add topics for better indexations
+gh repo edit --add-topic lean
+gh repo edit --add-topic problem-solving
+
+gh repo edit --description "A3 lean tool repo"
+gh repo edit --enable-discussions
+gh repo edit --enable-wiki=false
+
 # Create dedicated milestone so you get a completion staus
 gh milestone create --title PDCA --description "Dedicated to follow-up A3 delivery"
 
