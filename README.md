@@ -5,6 +5,16 @@
 The aim of this repo is to provide a set of ready-to-use markdown files, packaged in a way
 anyone can build and share an ePub version with no or no effort.
 
+# 🚀 Getting started
+
+1. Install [`xc`](https://xcfile.dev/getting-started/#installation)
+2. [Create a repo from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+3. Go the directory of the repo
+4. Modify some `markdowns` with your team
+5. Run `xc` to enjoy ready to use tasks
+6. Build the `ePub`
+7. Enjoy Team work
+
 ## Tasks
 
 ### epub
