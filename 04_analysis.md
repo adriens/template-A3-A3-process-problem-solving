@@ -1,4 +1,4 @@
-## Analysis
+## 🔬 Root cause analysis
 
 ### ℹ️ About
 
