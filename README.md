@@ -44,7 +44,7 @@ gh extension install valeriobelli/gh-milestone
 read TARGET_OWNER
 ```
 
-```she
+```sh
 read TARGET_REPO
 ```
 
