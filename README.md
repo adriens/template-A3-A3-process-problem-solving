@@ -5,6 +5,15 @@
 The aim of this repo is to provide a set of ready-to-use markdown files, packaged in a way
 anyone can build and share an ePub version with no or no effort.
 
+# 🤗 Project philosphy
+
+The idea behind this project is to: 
+
+> **put together collaborative A3 LEAN tool and `git` collaborative together**
+
+on a same automtable pipeline (w/ issues, pull requests, release automation, issues, discussions) all on a same
+and highly integrable platform.
+
 # 🚀 Getting started
 
 1. Install [`xc`](https://xcfile.dev/getting-started/#installation)
