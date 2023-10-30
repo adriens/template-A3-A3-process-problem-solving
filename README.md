@@ -41,13 +41,17 @@ gh extension install valeriobelli/gh-milestone
 ... then customize your env:
 
 ```sh
-TARGET_OWNER=adriens
-TARGET_REPO=a3-dummy-2
+read TARGET_OWNER=adriens
+read TARGET_REPO=a3-dummy-2
+echo $TARGET_OWNER
+echo $TARGET_REPO
 ```
 
 You're ready to go
 
 ## 🚀 Feed your repo
+
+Just run the following script as is:
 
 ```sh
 # Create repo
