@@ -42,7 +42,13 @@ gh extension install valeriobelli/gh-milestone
 
 ```sh
 read TARGET_OWNER
+```
+
+```she
 read TARGET_REPO
+```
+
+```sh
 echo $TARGET_OWNER
 echo $TARGET_REPO
 ```
