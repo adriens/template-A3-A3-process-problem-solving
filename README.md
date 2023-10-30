@@ -10,7 +10,8 @@ A markdown ePub template to help around "A3 Process and Problem Solving"
 Build the epub version of the A3.
 
 ```shell
-pandoc --metadata title="A3 LEAN Tool"\
+pandoc --toc\
+    --metadata title="A3 LEAN Tool"\
     title.yml\
     01_background.md\
     02_current_conditions.md\
@@ -22,3 +23,4 @@ pandoc --metadata title="A3 LEAN Tool"\
     08_standardization_and_next_steps.md\
     -o A3_Lean_Tool.epub
 ```
+
