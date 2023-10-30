@@ -25,6 +25,59 @@ and highly integrable platform.
 7. Build the `ePub`
 8. Enjoy Team work
 
+# 🦥 Getting started vor very lazy nerds
+
+In this section, you'll be able to create your own repo from scratch and prepare a lot of resources.
+
+## 🏁 Prerequisites
+
+First, install the proper [`gh-milestone`](https://github.com/valeriobelli/gh-milestone) gh extension:
+
+```sh
+# https://github.com/valeriobelli/gh-milestone
+gh extension install valeriobelli/gh-milestone
+```
+
+... then customize your env:
+
+```sh
+TARGET_OWNER=adriens
+TARGET_REPO=a3-dummy-2
+```
+
+You're ready to go
+
+## 🚀 Feed your repo
+
+```sh
+# Create repo
+gh repo create ${TARGET_OWNER}/${TARGET_REPO} --template adriens/template-a3-process-problem-solving --private --clone
+cd ${TARGET_REPO}
+# Create dedicated milestone so you get a completion staus
+gh milestone create --title PDCA --description "Dedicated to follow-up A3 delivery"
+
+# Create labels : one label per phase
+gh label create "Plan" --description "Planning phase" --color "d4c5f9"
+gh label create "Do" --description "Execution phase" --color "d4c5f9"
+gh label create "Check" --description "Evaluation phase" --color "d4c5f9"
+gh label create "Act" --description "Standardization phase" --color "d4c5f9"
+
+
+# Create and assign issues
+# https://cli.github.com/manual/gh_issue_create
+
+gh issue create --title "1️⃣ Problem Identification" --body "Determining and clearly defining the problem or improvement opportunity." --label "Plan" --milestone "PDCA"
+gh issue pin 1
+
+
+gh issue create --title "2️⃣ Analysis" --body "Find root cause analysis, and a thorough understanding of the problem" --label "Plan" --milestone "PDCA"
+gh issue create --title "3️⃣ Solution Development" --body "he solution development phase in the A3 format includes generating ideas and possible solutions, as well as planning the steps to be taken."  --label "Do" --milestone "PDCA"
+gh issue create --title "4️⃣ Solution Implementation" --body "Where the planned actions are executed to solve the identified problem." --label "Do" --milestone "PDCA"
+gh issue create --title "5️⃣ Results Verification" --body "The obtained results are evaluated after implementing the solutions to determine if the problem has been resolved as expected." --label "Check" --milestone "PDCA"
+gh issue create --title "6️⃣ Standardization and Follow-up" --body "At this stage, learnings are consolidated, corrective actions are established, and processes are put in place to maintain and improve the changes." --label "Act" --milestone "PDCA"
+gh issue pin 6
+```
+
 ## Tasks
 
 ### epub
