@@ -41,8 +41,8 @@ gh extension install valeriobelli/gh-milestone
 ... then customize your env:
 
 ```sh
-read TARGET_OWNER=adriens
-read TARGET_REPO=a3-dummy-2
+read TARGET_OWNER
+read TARGET_REPO
 echo $TARGET_OWNER
 echo $TARGET_REPO
 ```
