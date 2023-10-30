@@ -1,4 +1,4 @@
-## Check results
+## 🗹 Check results
 
 ### ℹ️ About
 
