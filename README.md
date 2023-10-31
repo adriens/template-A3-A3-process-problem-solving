@@ -126,6 +126,7 @@ pandoc --toc\
     06_follow_up_plan.md\
     07_result_checks.md\
     08_standardization_and_next_steps.md\
+    09_bibliography.md\
     -o A3_Lean_Tool.epub
 ```
 
@@ -144,6 +145,7 @@ pandoc --toc\
     06_follow_up_plan.md\
     07_result_checks.md\
     08_standardization_and_next_steps.md\
+    09_bibliography.md\
     -o A3_Lean_Tool.docx
 ```
 
