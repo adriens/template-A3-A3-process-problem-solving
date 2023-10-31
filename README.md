@@ -62,10 +62,14 @@ Just run the following script as is:
 # Create and locally clone repo
 gh repo create ${TARGET_OWNER}/${TARGET_REPO} --template adriens/template-a3-process-problem-solving --private --clone
 cd ${TARGET_REPO}
+```
+
+Now, prepare the repo
+
+```sh
 # Initialize the repo w/ issues, lables, milestones...
 xc feed
 ```
-
 ## Tasks
 
 ### feed
