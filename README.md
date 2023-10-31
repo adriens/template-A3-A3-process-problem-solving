@@ -67,13 +67,13 @@ cd $TARGET_REPO
 Now, prepare the repo
 
 ```sh
-# Initialize the repo w/ issues, lables, milestones...
+# Initialize the repo w/ issues, labels, milestones...
 xc feed
 ```
 ## Tasks
 
 ### feed
-Prepare lables, milestones and standard issues.
+Prepare labels, milestones and standard issues.
 
 ```shell
 # Setup a but more the repo
