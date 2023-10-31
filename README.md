@@ -59,10 +59,19 @@ You're ready to go
 Just run the following script as is:
 
 ```sh
-# Create repo
+# Create and locally clone repo
 gh repo create ${TARGET_OWNER}/${TARGET_REPO} --template adriens/template-a3-process-problem-solving --private --clone
 cd ${TARGET_REPO}
+# Initialize the repo w/ issues, lables, milestones...
+xc feed
+```
 
+## Tasks
+
+### feed
+Prepare lables, milestones and standard issues.
+
+```shell
 # Setup a but more the repo
 # Add topics for better indexations
 gh repo edit --add-topic lean
@@ -73,31 +82,30 @@ gh repo edit --enable-discussions
 gh repo edit --enable-wiki=false
 
 # Create dedicated milestone so you get a completion staus
-gh milestone create --title PDCA --description "Dedicated to follow-up A3 delivery"
+gh milestone create --title Plan --description "Initial phase of planning and identifying solutions in a continuous improvement process."
+gh milestone create --title Do --description "Implementation or execution of the plan formulated in the "Plan" phase, where actions are taken according to the plan to address the identified problem or to implement the proposed changes or improvements."
+gh milestone create --title Check --description "assessing and evaluating the results of the implemented actions (Do phase) against the initially set objectives and expected outcomes to determine if the desired improvements have been achieved and to gather data for decision-making in the subsequent phases."
+gh milestone create --title Act --description "Implementing changes based on the results of the "Check" phase, where adjustments and improvements are made to processes or systems, solidifying the cycle of continuous improvement."
 
 # Create labels : one label per phase
-gh label create "Plan" --description "Planning phase" --color "d4c5f9"
-gh label create "Do" --description "Execution phase" --color "d4c5f9"
-gh label create "Check" --description "Evaluation phase" --color "d4c5f9"
-gh label create "Act" --description "Standardization phase" --color "d4c5f9"
-
+gh label create "PDCA:Plan" --description "Planning phase" --color "d4c5f9"
+gh label create "PDCA:Do" --description "Execution phase" --color "d4c5f9"
+gh label create "PDCA:Check" --description "Evaluation phase" --color "d4c5f9"
+gh label create "PDCA:Act" --description "Standardization phase" --color "d4c5f9"
 
 # Create and assign issues
 # https://cli.github.com/manual/gh_issue_create
 
-gh issue create --title "1️⃣ Problem Identification" --body "Determining and clearly defining the problem or improvement opportunity." --label "Plan" --milestone "PDCA"
+gh issue create --title "1️⃣ Problem Identification" --body "Determining and clearly defining the problem or improvement opportunity." --label "PDCA:Plan" --milestone "Plan"
 gh issue pin 1
 
-
-gh issue create --title "2️⃣ Analysis" --body "Find root cause analysis, and a thorough understanding of the problem" --label "Plan" --milestone "PDCA"
-gh issue create --title "3️⃣ Solution Development" --body "he solution development phase in the A3 format includes generating ideas and possible solutions, as well as planning the steps to be taken."  --label "Do" --milestone "PDCA"
-gh issue create --title "4️⃣ Solution Implementation" --body "Where the planned actions are executed to solve the identified problem." --label "Do" --milestone "PDCA"
-gh issue create --title "5️⃣ Results Verification" --body "The obtained results are evaluated after implementing the solutions to determine if the problem has been resolved as expected." --label "Check" --milestone "PDCA"
-gh issue create --title "6️⃣ Standardization and Follow-up" --body "At this stage, learnings are consolidated, corrective actions are established, and processes are put in place to maintain and improve the changes." --label "Act" --milestone "PDCA"
+gh issue create --title "2️⃣ Analysis" --body "Find root cause analysis, and a thorough understanding of the problem" --label "PDCA:Plan" --milestone "Plan"
+gh issue create --title "3️⃣ Solution Development" --body "he solution development phase in the A3 format includes generating ideas and possible solutions, as well as planning the steps to be taken."  --label "PDCA:Do" --milestone "Do"
+gh issue create --title "4️⃣ Solution Implementation" --body "Where the planned actions are executed to solve the identified problem." --label "PDCA:Do" --milestone "Do"
+gh issue create --title "5️⃣ Results Verification" --body "The obtained results are evaluated after implementing the solutions to determine if the problem has been resolved as expected." --label "PDCA:Check" --milestone "Check"
+gh issue create --title "6️⃣ Standardization and Follow-up" --body "At this stage, learnings are consolidated, corrective actions are established, and processes are put in place to maintain and improve the changes." --label "PDCA:Act" --milestone "Act"
 gh issue pin 6
 ```
-
-## Tasks
 
 ### epub
 Build the epub version of the A3.
