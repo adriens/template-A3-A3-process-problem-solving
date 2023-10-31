@@ -146,3 +146,10 @@ pandoc --toc\
     08_standardization_and_next_steps.md\
     -o A3_Lean_Tool.docx
 ```
+
+### view
+Open the repo in the web browser.
+
+```shell
+gh repo view --web
+```
