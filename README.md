@@ -112,6 +112,8 @@ gh issue pin 6
 
 gh issue create --title "📅 Setup a due date for each Milestone" --body "Setup a due date for each milestone" --label "PDCA:Plan" --milestone "Plan"
 gh issue pin 7
+
+gh issue create --title "🔂 Hansei : Reinvest what we learned on other problems" --body "Identify other problems that could benefit of this solution" --label "PDCA:Act" --milestone "Act"
 ```
 
 ### epub
