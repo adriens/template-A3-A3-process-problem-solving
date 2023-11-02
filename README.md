@@ -109,6 +109,9 @@ gh issue create --title "4️⃣ Solution Implementation" --body "Where the plan
 gh issue create --title "5️⃣ Results Verification" --body "The obtained results are evaluated after implementing the solutions to determine if the problem has been resolved as expected." --label "PDCA:Check" --milestone "Check"
 gh issue create --title "6️⃣ Standardization and Follow-up" --body "At this stage, learnings are consolidated, corrective actions are established, and processes are put in place to maintain and improve the changes." --label "PDCA:Act" --milestone "Act"
 gh issue pin 6
+
+gh issue create --title "📅 Setup a due date for each Milestone" --body "Setup a due date for each milestone" --label "PDCA:Plan" --milestone "Plan"
+gh issue pin 7
 ```
 
 ### epub
