@@ -96,6 +96,7 @@ gh label create "PDCA:Plan" --description "Planning phase" --color "d4c5f9"
 gh label create "PDCA:Do" --description "Execution phase" --color "d4c5f9"
 gh label create "PDCA:Check" --description "Evaluation phase" --color "d4c5f9"
 gh label create "PDCA:Act" --description "Standardization phase" --color "d4c5f9"
+gh label create "Gemba" --description "Gemba" --color "d4c5f9"
 
 # Create and assign issues
 # https://cli.github.com/manual/gh_issue_create
